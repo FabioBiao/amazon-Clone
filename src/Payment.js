@@ -78,7 +78,7 @@ function Payment() {
     const handleChange = event => {
         // Listen for changes in the CardElement
         // and display any errors as the customer types their card details
-        setDisabled(event.empty);
+        setDisabled(event.empty);  // disable button
         setError(event.error ? event.error.message : "");
     }
 

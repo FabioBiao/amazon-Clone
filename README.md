@@ -102,4 +102,15 @@ reducer -> how we manipulate the data
 reducer is always listening for a dispatch
  basket: [...state.basket, action.item],   -->  state.basket o que era antes, mais o action.item
 
+# STRIPE
+npm i @stripe/stripe-js
+npm i @stripe/react-stripe-js
 
+
+firebase init 
+- functions
+- javascript
+- eslint - y
+- npm dependancies - y
+
+above command creates, the functions folder, firebase backend
