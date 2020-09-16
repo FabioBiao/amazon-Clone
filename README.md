@@ -70,12 +70,28 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 
-
-
+## NOTES ON PROJECT
+# es7 snippets
 # install firebase 
 npm i firebase
 npm install -g firebase-tools
-es7 snippets
+
+
+firebase login
+firebase init
+    Hosting: Configure and deploy Firebase Hosting sites
+    use existing project
+    unique page build
+npm build  (same as in angular)
+firebase deploy
+
+# not able to run scripts?
+Commands to run above command
+
+Get-ExecutionPolicy -List    #list all 
+Get-ExecutionPolicy
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Set-ExecutionPolicy Restricted -Scope CurrentUser 
 
 
 # State provider
@@ -85,3 +101,5 @@ reducer -> how we manipulate the data
 
 reducer is always listening for a dispatch
  basket: [...state.basket, action.item],   -->  state.basket o que era antes, mais o action.item
+
+
