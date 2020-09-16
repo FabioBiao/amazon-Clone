@@ -2,7 +2,7 @@ const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
 const stripe = require("stripe")(
-  "secretKey"
+  "SECRETKEY"
 ); // secret Key here
 
 // API
@@ -16,6 +16,7 @@ app.use(express.json());
 
 // - API routes
 app.get("/", (request, response) => response.status(200).send("hello world"));
+app.get("/test", (request, response) => response.status(200).send("test world"));
 
 app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
@@ -37,4 +38,4 @@ app.post("/payments/create", async (request, response) => {
 exports.api = functions.https.onRequest(app);
 
 // Example endpoint
-// http://localhost:5001/challenge-4b2b2/us-central1/api
+// http://localhost:5001/challenge-35e86/us-central1/api

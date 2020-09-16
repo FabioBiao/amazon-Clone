@@ -106,7 +106,7 @@ reducer is always listening for a dispatch
 npm i @stripe/stripe-js
 npm i @stripe/react-stripe-js
 
-
+# backend server
 firebase init 
 - functions
 - javascript
@@ -114,3 +114,30 @@ firebase init
 - npm dependancies - y
 
 above command creates, the functions folder, firebase backend
+
+firebase deploy --only functions   <- Deploy only backend
+firebase deploy --only hosting    <- Deploy frontend
+firebase deploy                 <- Deploy everything
+
+# to start function backend server
+firebase  emulators:start
+
+
+# orders
+to make orders work, create a DB on firestorm... 
+Cloud firestorm
+test mode....
+
+when checkout use 4242424... combination on card /date
+
+
+# usefull links.
+To check firebase DBs
+https://console.firebase.google.com/project/challenge-35e86/firestore/data~2Fusers~2FdtOGSUG8UuMGgWflapB2olITyQl1~2Forders~2Fpi_1HS2RwLm28zo9x0sIIkrrSaj
+
+to validate orders
+https://dashboard.stripe.com/test/payouts 
+
+
+
+update to Blaze / Spark on fireblaze if you want to deploy functions to firebase
